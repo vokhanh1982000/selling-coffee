@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Trang chủ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bs/css/bootstrap.min.css">
+    <script src="bs/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="bs/js/popper.min.js"></script>
+    <script src="bs/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!----header--->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; z-index: 10; width: 100%;">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" style="width: 30px;height: 30px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home"></i>Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v"></i>Menu</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="detail.html#food"><i class="fa fa-utensils"></i>Food</a>
+                        <a class="dropdown-item" href="detail.html#drink"><i class="fa fa-coffee"></i>Drink</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="detail.html#uudai">Ưu đãi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="detail.html#tuyendung">Tuyển dụng</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;"><i class="fa fa-shopping-cart"></i>Giỏ hàng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dangnhap.html" style="color: white;"><i class="fa fa-sign-in-alt"></i>Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <div class="row">
+            <div class="col-sm-2" style="position: fixed; z-index: 1; width: 100%; top:9%;">
+                <div class="list-group" style="width: 200px;">
+                    <a href="#drink" class="list-group-item list-group-item-action active"><i class="fa fa-coffee"></i>Thức uống</a>
+                    <a href="#food" class="list-group-item list-group-item-action"><i class="fa fa-utensils"></i>Món ăn</a>
+                    <a href="#uudai" class="list-group-item list-group-item-action">Ưu đãi</a>
+                    <a href="#tuyendung" class="list-group-item list-group-item-action">Tuyển dụng</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-10">
+                <!---Thức uống--->
+                <div style="padding-top: 75px;padding-left: 50px;padding-bottom: 20px">
+                    <p id="drink" class="category"><b><i>Thức uống</i></b></p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="special"><i class="fa fa-fan"></i>Bán chạy nhất</p>
+                                    <img src="img/cafeden.jpg" class="card-img-top" alt="cafeden">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cafe đen</h5>
+                                        <p class="card-text">20000VNĐ</p>
+                                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="img/cafesua.jpg" class="card-img-top" alt="cafesua">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cafe sữa</h5>
+                                        <p class="card-text">25000VNĐ</p>
+                                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="img/bacsiu.jpg" class="card-img-top" alt="bacsiu">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bạc sỉu</h5>
+                                        <p class="card-text">28000VNĐ</p>
+                                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="special"><i class="fa fa-star"></i>Giảm giá 20%</p>
+                                    <img src="img/americano.jpg" class="card-img-top" alt="americano">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Americano</h5>
+                                        <p class="card-text"><del>40000VNĐ</del> ->32000VNĐ</p>
+                                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="img/trasua.jpg" class="card-img-top" alt="trasua" style="height: 280px;background-size: cover;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Trà sữa</h5>
+                                        <p class="card-text">30000VNĐ</p>
+                                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="img/pepsi.jpg" class="card-img-top" alt="pepsi">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pepsi</h5>
+                                        <p class="card-text">15000VNĐ</p>
+                                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---Món ăn--->
+                <div style="padding-top: 20px;padding-left: 50px;padding-bottom: 20px">
+                    <p id="food" class="category"><b><i>Món ăn</i></b></p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="special"><i class="fa fa-star"></i>Giảm giá 20%</p>
+                                    <img src="img/bonglan.jpg" class="card-img-top" alt="banhbonglan">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bánh bông lan trứng muối</h5>
+                                        <p class="card-text"><del>30000VNĐ</del> ->24000VNĐ</p>
+                                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="img/banhchocolate.jpg" class="card-img-top" alt="banhchocolate">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bánh chocolate</h5>
+                                        <p class="card-text">30000VNĐ</p>
+                                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="img/banhmatcha.jpg" class="card-img-top" alt="banhmatcha">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bánh matcha</h5>
+                                        <p class="card-text">30000VNĐ</p>
+                                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="img/sandwich.png" class="card-img-top" alt="sandwich">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sandwich</h5>
+                                        <p class="card-text">30000VNĐ</p>
+                                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="img/cake.jpg" class="card-img-top" alt="banhkem">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bánh kem</h5>
+                                        <p class="card-text">30000VNĐ</p>
+                                        <a href="#" class="btn btn-primary">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---Ưu đãi--->
+                <div style="padding-top: 20px;padding-left: 50px;padding-bottom: 20px">
+                    <p id="uudai" class="category"><b><i>Ưu đãi</i></b></p>
+                    <hr>
+                    <p>Điểm của tôi:</p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="img/bonglan.jpg" class="card-img-top" alt="banhbonglan">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bánh bông lan trứng muối</h5>
+                                        <p class="card-text">Điểm : 8</p>
+                                        <a href="#" class="btn btn-primary">Đổi ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="img/cafeden.jpg" class="card-img-top" alt="cafeden">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cafe đen</h5>
+                                        <p class="card-text">Điểm : 5</p>
+                                        <a href="#" class="btn btn-primary">Đổi ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="img/cafesua.jpg" class="card-img-top" alt="cafesua">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cafe sữa</h5>
+                                        <p class="card-text">Điểm : 6</p>
+                                        <a href="#" class="btn btn-primary">Đổingay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---Tuyển dụng--->
+                <div style="padding-top: 20px;padding-left: 50px;padding-bottom: 20px">
+                    <p id="tuyendung" class="category"><b><i>Tuyển dụng</i></b></p>
+                    <hr>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0" class="employ">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Pha chế
+                            </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <Lorem> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                        est laborum.</Lorem>
+                                </div>
+                                <a href="#" class="tuyendung">Ứng tuyển</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0" class="employ">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Phục vụ
+                            </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <Lorem> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                        est laborum.</Lorem>
+                                </div>
+                                <a href="#" class="tuyendung">Ứng tuyển</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0" class="employ">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Quản lí
+                            </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <Lorem>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                        est laborum.</Lorem>
+                                </div>
+                                <a href="#" class="tuyendung">Ứng tuyển</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0" class="employ">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Bảo vệ & Vệ sinh
+                            </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <Lorem>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                        est laborum.</Lorem>
+                                </div>
+                                <a href="#" class="tuyendung">Ứng tuyển</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer style="background-color: black;color: white ">
+    <table style="background-color: aqua;width: 100%;color: black">
+        <tr>
+            <td>
+                <p><b>ABOUT US</b></p>
+                <P>Đây là đề tài web bán cafe online</P>
+            </td>
+            <td>
+                <p><b>CONTACT US</b></p>
+                <p><i class="fa fa-map-marker-alt"></i><Lorem> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</Lorem></p>
+                <p><i class="fa fa-phone-square-alt"></i>19001000</p>
+                <p><i class="fa fa-envelope"></i>cafeonline@gmail.com</p>
+                <p><i class="fa fa-facebook-square"></i>cafe online</p>
+            </td>
+        </tr>
+    </table>
+    <p>Copyright © 2020 Coffee online. All rights reserved.</p>
+</footer>
+</html>

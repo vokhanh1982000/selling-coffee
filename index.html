@@ -1,0 +1,218 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Trang chủ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bs/css/bootstrap.min.css">
+    <script src="bs/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="bs/js/popper.min.js"></script>
+    <script src="bs/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+
+<body>
+    <!----header--->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; z-index: 10; width: 100%;">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" style="width: 30px;height: 30px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  		</button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home"></i>Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v"></i>Menu</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="detail.html#food"><i class="fa fa-utensils"></i>Food</a>
+                        <a class="dropdown-item" href="detail.html#drink"><i class="fa fa-coffee"></i>Drink</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="detail.html#uudai">Ưu đãi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="detail.html#tuyendung">Tuyển dụng</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;"><i class="fa fa-shopping-cart"></i>Giỏ hàng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dangnhap.html" style="color: white;"><i class="fa fa-sign-in-alt"></i>Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" align="center">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a><img src="img/khonggian1.png" class="d-block w-100" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"></a>
+            </div>
+            <div class="carousel-item">
+                <a><img src="img/khonggian2.png" class="d-block w-100" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1"></a>
+            </div>
+            <div class="carousel-item">
+                <img src="img/khonggian3.png" class="d-block w-100" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Không gian</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        			</button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <img src="img/khonggian1.png" style="float: left;width: 50%;height: 100%;">
+                        <p>Không gian rộng rãi, thoáng mát đem lại cảm giác dễ chịu, sảng khoái</p>
+                        <Lorem> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Lorem>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Vật chất</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        			</button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/khonggian2.png" style="float: right;width: 50%;height: auto;">
+                    <p>
+                        <Lorem>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Lorem>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Combo sáng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          				<span aria-hidden="true">&times;</span>
+        			</button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/khonggian3.png" style="float: left;width: 50%;height: 100%;">
+                    <div>Combo bao gồm:</div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked="auto">
+                        <label class="form-check-label" for="defaultCheck1">
+    					Cà phê đá
+						</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked="auto">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Cà phê sữa
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" checked="auto">
+                        <label class="form-check-label" for="defaultCheck2">
+						sandwich
+						</label>
+                    </div>
+                    <p>Giá : 60000VNĐ</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary"><a href="#" class="btn btn-primary">Mua ngay</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p style="font-size: 150%;padding-left: 10%;"><b><i>Không gian</i></b></p>
+        <div class=" row align-items-center " style="padding-left: 2%; padding-right: 10px; padding-top: 10px; ">
+            <div class="col-sm-6 ">
+                <img src="img/khonggian1.png " style="width: 100%;height: auto; ">
+            </div>
+            <div class="col-sm-6 ">
+                Không gian rộng rãi, thoáng mát đem lại cảm giác dễ chịu, sảng khoái Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem incidunt molestiae temporibus, vero quos deleniti aspernatur, repellat nobis atque reprehenderit animi laborum
+                pariatur nemo. Possimus tempore ullam velit consectetur?
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container ">
+        <p style="font-size: 150%;padding-left: 10%" ;><b><i>Vật chất</i></b></p>
+        <div class="row align-items-center" style="padding-left: 2%; padding-right: 10px; padding-top: 10px;">
+            <div class="col-sm-6">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi iusto exercitationem accusamus in delectus cum, fugiat error assumenda quaerat numquam sint, veritatis incidunt magni aspernatur eum amet itaque architecto vel.
+            </div>
+            <div class="col-sm-6">
+                <img src="img/khonggian2.png " style="width: 100%;height: auto; ">
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <p style="font-size: 150%;padding-left: 10%;"><b><i>Combo sáng</i></b></p>
+        <div class="row align-items-center" style="padding-left: 2%; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;">
+            <div class="col-sm-6">
+                <img src="img/khonggian3.png " style="width: 100%; height: auto;">
+            </div>
+            <div class="col-sm-6">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe error, aperiam quam provident non illo ea eius pariatur architecto asperiores accusamus commodi, iusto laborum. Dolorem nemo doloremque saepe impedit tempora? </div>
+        </div>
+    </div>
+    <hr style="border: 2px solid black;">
+    <script type="text/javascript">
+        alert("Welcome to cafeonline");
+    </script>
+</body>
+<footer style="background-color: black;color: white ">
+    <table style="background-color: aqua;width: 100%;color: black">
+        <tr>
+            <td>
+                <p><b>ABOUT US</b></p>
+                <P>Đây là đề tài web bán cafe online</P>
+            </td>
+            <td>
+                <p><b>CONTACT US</b></p>
+                <p><i class="fa fa-map-marker-alt"></i><Lorem> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</Lorem></p>
+                <p><i class="fa fa-phone-square-alt"></i>19001000</p>
+                <p><i class="fa fa-envelope"></i>cafeonline@gmail.com</p>
+                <p><i class="fa fa-facebook-square"></i>cafe online</p>
+            </td>
+        </tr>
+    </table>
+    <p>Copyright © 2020 Coffee online. All rights reserved.</p>
+</footer>
+
+</html>
